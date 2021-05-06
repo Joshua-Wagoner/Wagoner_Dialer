@@ -8,10 +8,12 @@ namespace Wagoner_Dialer
 {
     class HomePhone : Phone
     {
+        public HomePhone(string number, string companyName) : 
+            base(number, companyName, PhoneType.HOMEPHONE) {}
 
-        public override void Dial()
+        public override string Dial()
         {
-            
+            return Company + " is being dialed using " + Number + "...";
         }
     }
 }
