@@ -8,8 +8,8 @@ namespace Wagoner_Dialer
 {
     class CellPhone : Phone
     {
-        public CellPhone(string number, string companyName) : 
-            base(number, companyName, PhoneType.CELLPHONE) {}
+        public CellPhone(string number, string companyName, PhoneType phoneType) : 
+            base(number, companyName, phoneType) {}
 
         public override string Dial()
         {
